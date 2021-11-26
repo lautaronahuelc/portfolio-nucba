@@ -1,10 +1,10 @@
-# Portafolio creo para NUCBA
+# Portafolio para NUCBA
 
 ¡Hola! :wave:
 
-En NUCBA estamos trabajando en la creación de un portafolio personal.
+En NUCBA estamos trabajando en la creación de un portafolio personal. 👏
 
-[Ver el proceso](https://portfolio-nucba.netlify.app/) :point_left:
+Te comparto el proceso: [Ver el proceso](https://portfolio-nucba.netlify.app/) 🎯
 
 ***
 
