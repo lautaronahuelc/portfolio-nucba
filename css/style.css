@@ -1,0 +1,99 @@
+:root {
+    --dark-blue: #1d3557;
+    --orange: #f9975d;
+    --black: #3b454e;
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url(../fonts/SF-Mono.dmg);
+}
+
+* {
+    font-family: 'SF Mono', Consolas, monospace;
+}
+
+/* body {
+    background-color: var(--dark-blue);
+} */
+
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    border-bottom: 1px solid var(--black);
+    background-color: #ffffff;
+}
+
+.contenedor-titulo {
+    display: flex;
+    align-items: center;
+    width: 396px;
+    color: var(--dark-blue);
+}
+
+h1 {
+    margin: 0;
+    color: var(--black);
+}
+
+#trainee-it{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.menu {
+    height: inherit;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1.4px solid var(--dark-blue);
+    border-bottom: 4px solid var(--dark-blue);
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px; 
+}
+
+.menu__link {
+    color: var(--dark-blue);
+}
+
+.menu__item:active {
+    border: 1.4px solid var(--dark-blue);
+}
+
+#sobre-mi:target,
+#herramientas:target,
+#proyectos:target,
+#github:target,
+#contacto:target {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    border: 1.4px solid var(--orange);
+}
+
+#sobre-mi:target a,
+#herramientas:target a,
+#proyectos:target a,
+#github:target a,
+#contacto:target a {
+    color: var(--orange);
+}
