@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
     <title>Lautaro Coria | Trainee IT</title>
 </head>
 <body>
-    <header class="encabezado">
-        <h1>LAUTARO CORIA</h1>
-        <span id="trainee-it"></span>
+    <header class="main-header">
+        <h1>Lautaro Coria</h1>
+        <span class="profile">| Full Stack Dev. Student</span>
     </header>
 
-    <section class="hero"> <!-- Backgroun espacio -->
-        <div class="hero-2"></div> <!-- Brackground mi cara -->
+    <section class="hero">
+        <span class="welcome" id="welcome">Welcome to <br> my website.</span>
+        <img src="assets/img/hero-img.png" alt="" class="hero__img">
     </section>
 
     <nav class="menu">
@@ -38,5 +42,36 @@
             </a>
         </ul>
     </nav>
+
+    <main>
+        <section class="window">
+            <header class="window__header">
+                <img src="assets/img/circles.png" alt="" class="window__circles">
+                <h2 class="window__subtitle">Sobre mi</h2>
+            </header>
+            <div class="window__img"></div>
+            <section class="window__body">
+                <h3>Resumen.</h3>
+                <ul>
+                    <li>26 años.</li>
+                    <li>Estudiante programador.</li>
+                    <li>Mi meta hoy → Mi primero empleo IT. 🎯</li>
+                    <li>
+                        Una canción → 
+                        <a href="https://www.youtube.com/watch?v=kkLk2XWMBf8" target="__blank">Calvin Harris, Sam Smith - Promises</a>
+                    </li>
+                    <li>
+                        Un libro → 
+                        <span class="italic">'Crear o Morir' - Andrés Oppenheimer</span>
+                    </li>
+                    <li>
+                        Una serie de TV → 
+                        <span>Friends</span>
+                    </li>
+                </ul>
+                <img src="https://raw.githubusercontent.com/lautaronahuelc/lautaronahuelc/main/gif-friends.gif" alt="Gif de Friends" class="gif-friends">
+            </section>
+        </section>
+    </main>
 </body>
 </html>
