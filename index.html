@@ -13,65 +13,113 @@
     <title>Lautaro Coria | Trainee IT</title>
 </head>
 <body>
-    <header class="main-header">
-        <h1>Lautaro Coria</h1>
-        <span class="profile">| Full Stack Dev. Student</span>
-    </header>
-
-    <section class="hero">
-        <span class="welcome" id="welcome">Welcome to <br> my website.</span>
-        <img src="assets/img/hero-img.png" alt="" class="hero__img">
-    </section>
+    <div> <!-- Por el sticky -->
+        <header class="main-header">
+            <h1 class="main-header__titulo">Lautaro Coria</h1>
+            <span class="main-header__profile">| Full Stack Dev. Student</span>
+        </header>
+    
+        <section class="hero">
+            <div class="hero__container-welcome">
+                <h2 class="hero__welcome" id="welcome"></h2>
+            </div> 
+            <img src="assets/img/hero-img.png" alt="Imagen mía con un traje de astronauta" class="hero__img">
+        </section>
+    </div>
 
     <nav class="menu">
         <ul class=menu__list>
-            <a class="menu__link" href="#sobre-mi">
-                <li class="menu__item" id="sobre-mi">Sobre mí</li>
+            <a href="#sobre-mi">
+                <li class="menu__item">Sobre mí</li>
             </a>
-            <a class="menu__link" href="#herramientas">
-                <li class="menu__item" id="herramientas">Herramientas</li>
+            <a href="#herramientas">
+                <li class="menu__item">Herramientas</li>
             </a>
-            <a class="menu__link" href="#proyectos">
-                <li class="menu__item" id="proyectos">Proyectos</li>
+            <a href="#proyectos">
+                <li class="menu__item">Proyectos</li>
             </a>
-            <a class="menu__link" href="#github">
-                <li class="menu__item" id="github">Github</li>
+            <a href="#github">
+                <li class="menu__item">Github</li>
             </a>
-            <a class="menu__link" href="#contacto">
-                <li class="menu__item" id="contacto">Contacto</li>
+            <a href="#contacto">
+                <li class="menu__item">Contacto</li>
             </a>
         </ul>
     </nav>
 
     <main>
-        <section class="window">
-            <header class="window__header">
-                <img src="assets/img/circles.png" alt="" class="window__circles">
-                <h2 class="window__subtitle">Sobre mi</h2>
-            </header>
-            <div class="window__img"></div>
-            <section class="window__body">
-                <h3>Resumen.</h3>
-                <ul>
-                    <li>26 años.</li>
-                    <li>Estudiante programador.</li>
-                    <li>Mi meta hoy → Mi primero empleo IT. 🎯</li>
-                    <li>
-                        Una canción → 
-                        <a href="https://www.youtube.com/watch?v=kkLk2XWMBf8" target="__blank">Calvin Harris, Sam Smith - Promises</a>
-                    </li>
-                    <li>
-                        Un libro → 
-                        <span class="italic">'Crear o Morir' - Andrés Oppenheimer</span>
-                    </li>
-                    <li>
-                        Una serie de TV → 
-                        <span>Friends</span>
-                    </li>
-                </ul>
-                <img src="https://raw.githubusercontent.com/lautaronahuelc/lautaronahuelc/main/gif-friends.gif" alt="Gif de Friends" class="gif-friends">
-            </section>
-        </section>
+        <div id="sobre-mi" class="container"> <!-- Todo está adentro de este div para delimitar dónde para el scroll -->
+            <article class="window">
+                <header class="window__header">
+                    <img src="assets/img/circles.png" alt="" class="window__circles">
+                    <h2 class="window__subtitle">Sobre mi</h2>
+                </header>
+                <section class="w1__body">
+                    <div class="w1__img"></div>
+                    <div class="w1__text">
+                        <h3 class="w1__title">Resumen.</h3>
+                        <ul class="w1__list">
+                            <li class="w1__item">26 años.</li>
+                            <li class="w1__item">Estudiante programador.</li>
+                            <li class="w1__item">
+                                <span class="color-green">Mi meta hoy</span>
+                                <span class="color-pink">→</span>
+                                Mi primero empleo IT. 🎯
+                            </li>
+                            <li class="w1__item">
+                                <span class="color-green">Una canción</span>
+                                <span class="color-pink">→</span>
+                                <a  class="w1__link" href="https://www.youtube.com/watch?v=kkLk2XWMBf8" target="__blank">Calvin Harris, Sam Smith - Promises</a>
+                            </li>
+                            <li class="w1__item">
+                                <span class="color-green">Un libro</span>
+                                <span class="color-pink">→</span>
+                                'Crear o Morir' - Andrés Oppenheimer.
+                            </li>
+                            <li class="w1__item">
+                                <span class="color-green">Una serie de TV</span>
+                                <span class="color-pink">→</span>
+                                Friends.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article> <!-- Sobre mí -->
+        </div>
+
+        <div id="herramientas" class="container"> <!-- Todo está adentro de este div para delimitar dónde para el scroll -->
+            <article class="window">
+                <header class="window__header">
+                    <img src="assets/img/circles.png" alt="" class="window__circles">
+                    <h2 class="window__subtitle">Herramientas</h2>
+                </header>
+                <section class="w2__body">
+                    <h3 class="w2__title">¿Qué lenguajes y herramientas manejo?</h3>
+                    <div class="w2__icon-container">
+                        <ul class="w2__list">
+                            <li class="w2__item">
+                                <img src="assets/img/visual-studio-code.png" alt="Icono de Visual Studio Code" class="w2__icon">
+                            </li>
+                            <li class="w2__item">
+                                <img src="assets/img/html.png" alt="Icono del lenguaje HTML" class="w2__icon">
+                            </li>
+                            <li class="w2__item">
+                                <img src="assets/img/css.png" alt="Icono del lenguaje CSS" class="w2__icon">
+                            </li>
+                            <li class="w2__item">
+                                <img src="assets/img/javascript.png" alt="Icono del lenguaje JavaScript" class="w2__icon">
+                            </li>
+                            <li class="w2__item">
+                                <img src="assets/img/git.png" alt="Icono de Git" class="w2__icon">
+                            </li>
+                            <li class="w2__item">
+                                <img src="assets/img/github.png" alt="Icono de Github" class="w2__icon">
+                            </li>  
+                        </ul>
+                    </div>
+                </section>
+            </article> <!-- Herramientas -->
+        </div>
     </main>
 </body>
 </html>
