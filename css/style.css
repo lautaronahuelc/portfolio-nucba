@@ -14,12 +14,12 @@
 }
 
 @font-face {
-    font-family: 'SF Mono';
-    src: url(../fonts/SF-Mono.dmg);
+    font-family: 'SF Mono Regular';
+    src: url(../fonts/SFMono/SFMonoRegular.otf);
 }
 
 * {
-    font-family: 'SF Mono', Consolas, monospace;
+    font-family: 'SF Mono Regular', Consolas, monospace;
     color: var(--black);
 }
 
