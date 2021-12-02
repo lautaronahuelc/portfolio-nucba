@@ -9,6 +9,7 @@
     --gray-scale-1: #f0f0f0;
     --gray-scale-2: #e0e3e6;
     --gray-scale-3: #787d82;
+    --gray-scale-4: #686b6e;
     --silver-blue: #627597;
     scroll-behavior: smooth;
 }
@@ -284,6 +285,32 @@ main {
 
 .w2__icon {
     width: 100px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    height: 100px;
+    background-color: var(--gray-scale-2);
+}
+
+.social-networks i {
+    font-size: 20px;
+    color: var(--gray-scale-3);
+}
+
+.social-networks i:hover {
+    cursor: pointer;
+    color: var(--gray-scale-4);
+}
+
+.autor {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    color: var(--gray-scale-3);
 }
 
 @media screen and (max-width: 1024px) {
