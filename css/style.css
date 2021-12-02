@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'SF Mono Regular';
-    src: url(../fonts/SFMono/SFMonoRegular.otf);
+    src: url(../fonts/SFMonoRegular.otf);
 }
 
 * {
@@ -325,9 +325,35 @@ main {
     /**
      * Estilos para el navbar
      */
+    
+    .menu__list {
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .menu__link {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        border-bottom: 2px solid transparent;
+    }
 
     .menu__item {
-        font-size: 2vw;
+        padding: 0;
+        font-size: 3vw;
+        border: none;
+        border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+    }
+    
+    .menu__item:active,
+    .selected {
+        border: none;
+        border-bottom: 2px solid var(--black);
+        background-color: rgba(224, 227, 230, 0.2);
     }
 
     /**
