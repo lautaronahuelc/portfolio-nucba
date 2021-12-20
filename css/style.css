@@ -12,6 +12,15 @@
     --gray-scale-4: #686b6e;
     --silver-blue: #627597;
     scroll-behavior: smooth;
+    /*
+        colores oscuros:
+            040D21 
+            3e6683
+            19253B
+            3e6683
+            0C162D
+            303D56
+    */
 }
 
 @font-face {
@@ -43,68 +52,29 @@
  * Estilos para el header 
  */ 
 
-.main-header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    width: 100%;
-    height: max-content;
-    padding: 5px 0;
-    background-color: var(--main-color-scale-1);
-}
+ .header {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 400px;
+     background: url(../assets/img/space.jpg);
+     background-size: cover;
+     background-position: center;
+ }
 
-.main-header__titulo {
-    font-family: 'Alliance No 1 SemiBold';
-    color: var(--white);
-}
-
-.main-header__titulo::after {
-    content: '|';
-    margin: 0 15px;
-    font-weight: 400;
-}
-
-.main-header__profile {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: var(--white);
-}
-
-/**
- * Estilos para el hero
- */ 
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 500px;
-    text-align: start;
-    background: url(../assets/img/space.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.hero__container-welcome {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.hero__welcome {
-    margin: 0;
+.header__title {
     font-family: 'Alliance No 1 Bold', sans-serif;
-    font-size: 7vw;
-    background: -webkit-linear-gradient(-70deg, #a2facf 0%, var(--secundary-color-scale-1) 100%);
-    background-clip: text;  
-        -webkit-background-clip: text;  
-        -moz-background-clip: text;  
-        -moz-text-fill-color: transparent;  
-        -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    color: var(--white);
 }
 
-.hero__img {
+.header__title > div {
+    font-size: 2rem;
+    color: var(--silver-blue);
+    color: var(--main-color-scale-2);
+}
+
+.header__img {
     width: 320px;
     align-self: flex-end;
 }
@@ -117,16 +87,15 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    height: 70px;
+    height: 55px;
     background-color: var(--white);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .menu__list {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
     margin: 0;
     padding: 0;
     height: inherit;
@@ -145,9 +114,12 @@
     background-color: rgba(224, 227, 230, 0.2);
 }
 
+.menu__item {
+    font-size: 0.9rem;
+}
+
 .selected {
     border-color: var(--main-color-scale-2);
-    background-color: rgba(224, 227, 230, 0.2);
 }
 
 .selected .menu__item {
@@ -169,24 +141,21 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
     padding-top: 100px;
 }
 
 .window {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     height: 600px;
     border: 1px solid var(--gray-scale-2);
-    border-bottom: 2px solid var(--gray-scale-2);
-    border-right: 2px solid var(--gray-scale-2);
     border-radius: 13px;
         -webkit-border-radius: 13px;
         -moz-border-radius: 13px;
         -ms-border-radius: 13px;
         -o-border-radius: 13px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     background-color: inherit;
     overflow: hidden;
 }
@@ -199,6 +168,7 @@ main {
 .window__header {
     display: flex;
     align-items: center;
+    height: 35px;
     border-bottom: 1px solid var(--gray-scale-2);
     background-color: var(--gray-scale-1);
 }
@@ -212,21 +182,27 @@ main {
     flex-grow: 1;
     margin: 0;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Alliance No 1 Regular', sans-serif;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--gray-scale-3);
 }
 
+/**
+ * Estilos para el w1
+ */
+
 .w1__body {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
 .w1__img {
     flex-basis: 50%;
-    background-image: url(../assets/img/about-me.jpg);
+    height: 100%;
+    background-image: url(../assets/img/about-me2.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -241,8 +217,15 @@ main {
 
 .w1__title,
 .w2__title {
+    font-family: 'Alliance No 1 SemiBold', sans-serif;
     font-size: 2.5rem;
     color: var(--silver-blue);
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background-clip: text;  
+        -webkit-background-clip: text;  
+        -moz-background-clip: text;  
+        -moz-text-fill-color: transparent;  
+        -webkit-text-fill-color: transparent;
 }
 
 .w1__list {
@@ -255,6 +238,7 @@ main {
 
 .w1__item {
     margin-top: 5px;
+    font-size: 0.9rem;
 }
 
 .w1__link {
@@ -340,22 +324,35 @@ main {
      */
 
     .container {
-        width: 90%;
+        width: 100%;
+    }
+
+    .window {
+        width: 80%;
     }
 
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 795px) {
     /**
      * Estilos para el header 
      */ 
 
-    .main-header__titulo {
+    .header {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header__title {
+        font-size: 8vw;
+    }
+
+    .header__title > div {
         font-size: 4vw;
     }
 
-    .main-header__profile {
-        font-size: 3vw;
+    .header__img {
+        align-self: center;
     }
 
     /**
@@ -366,19 +363,6 @@ main {
         flex-direction: column;
     }
 
-    /* Para poder centrar el hero__welcome */
-    .hero__container-welcome {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60vw;
-    }
-
-    .hero__welcome {
-        margin-left: 0;
-        text-align: center;
-    }
-
     .hero__img {
         align-self: center;
     }
@@ -386,16 +370,8 @@ main {
     /**
      * Estilos para el navbar
      */
-    
-    .menu__list {
-        justify-content: space-evenly;
-        gap: 0;
-    }
 
-    .menu__link {
-        padding: 0;
-        font-size: 3vw;
-    }
+
 
     /**
      * Estilos para el main
@@ -407,6 +383,15 @@ main {
 
     .w1__title {
         margin: 0 0 20px 0;
+        font-size: 2rem;
+    }
+
+    .w1__item {
+        font-size: 0.8em;
+    }
+
+    .w1__img {
+        width: 100%;
     }
 
     .w2__body {
