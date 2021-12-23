@@ -212,17 +212,17 @@ main {
 }
 
 /**
- * Estilos para el w1
+ * Estilos para el sobre-mi
  */
 
-.w1__body {
+.sobre-mi__body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
 
-.w1__img {
+.sobre-mi__img {
     flex-basis: 50%;
     height: 100%;
     background-image: url(../assets/img/about-me2.jpg);
@@ -230,7 +230,7 @@ main {
     background-position: center;
 }
 
-.w1__text {
+.sobre-mi__text {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
@@ -238,8 +238,7 @@ main {
     padding: 20px;
 }
 
-.w1__title,
-.w2__title {
+.window__title {
     font-family: 'Alliance No 1 SemiBold', sans-serif;
     font-size: 2.5rem;
     color: var(--silver-blue);
@@ -251,7 +250,7 @@ main {
         -webkit-text-fill-color: transparent;
 }
 
-.w1__list {
+.sobre-mi__list {
     margin: 0;
     margin-left: 30px;
     padding-left: 10px;
@@ -259,14 +258,44 @@ main {
     border-left: 2px solid var(--silver-blue);
 }
 
-.w1__item {
+.sobre-mi__item {
     margin-top: 5px;
     font-size: 0.9rem;
 }
 
-.w1__link {
+.sobre-mi__link {
     color: var(--secundary-color-scale-2);
     text-decoration: underline;
+}
+
+.ventajas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+.ventajas__header {
+    text-align: center;
+}
+
+.ventajas__title {
+    font-family: 'Alliance No 1 SemiBold', sans-serif;
+    font-size: 2.5rem;
+}
+
+.ventajas__body {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+.ventajas__subtitle {
+    font-family: 'Alliance No 1 SemiBold';
+}
+
+.ventajas__icon {
+    width: 50px;
 }
 
 .color-green {
@@ -277,13 +306,13 @@ main {
     color: var(--pink);
 }
 
-.w2__body {
+.herramientas__body {
     display: flex;
     height: 100%;
     align-items: center;
 }
 
-.w2__title {
+.herramientas__title {
     margin: 0;
     flex-basis: 50%;
     height: max-content;
@@ -291,13 +320,13 @@ main {
     text-align: center;
 }
 
-.w2__icon-container {
+.herramientas__icon-container {
     flex-basis: 50%;
     height: 100%;
     padding: 20px;
 }
 
-.w2__list {
+.herramientas__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -310,7 +339,7 @@ main {
     list-style: none;
 }
 
-.w2__icon {
+.herramientas__icon {
     width: 100px;
 }
 
@@ -399,6 +428,7 @@ main {
      */
 
     .menu {
+        display: none;
         position: fixed;
         top: 40px;
         right: 0;
@@ -431,38 +461,38 @@ main {
      * Estilos para el main
      */
 
-    .w1__body {
+    .sobre-mi__body {
         flex-direction: column-reverse;
     }
 
-    .w1__title {
+    .sobre-mi__title {
         margin: 0 0 20px 0;
         font-size: 2rem;
     }
 
-    .w1__item {
+    .sobre-mi__item {
         font-size: 0.8em;
     }
 
-    .w1__img {
+    .sobre-mi__img {
         width: 100%;
     }
 
-    .w2__body {
+    .herramientas__body {
         flex-direction: column;
         justify-content: center;
     }
 
-    .w2__list {
+    .herramientas__list {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 
-    .w2__title {
+    .herramientas__title {
         flex-basis: auto;
     }
 
-    .w2__icon {
+    .herramientas__icon {
         width: 100%;
     }
 }
